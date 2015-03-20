@@ -3,10 +3,10 @@ package ro.pub.cs.systems.pdsd.lab04.contactsmanager;
 import android.app.Activity;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 public class ContactsManagerActivity extends Activity {
 
@@ -39,6 +39,15 @@ public class ContactsManagerActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+	
+	public void onActivityResult(int requestCode, int resultCode, Intent intent){
+		switch(requestCode){
+		case Fragment1.start_native_contacts:
+		    setResult(resultCode, new Intent());
+		    finish();
+		    break;
+		  }
+		}
 	
 	
 }

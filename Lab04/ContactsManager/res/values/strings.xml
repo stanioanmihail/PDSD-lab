@@ -7,5 +7,9 @@
     <string name="button_show">Show/Hide</string>
     <string name="button_save">Save</string>
     <string name="button_cancel">Cancel</string>
-    
+    <string name="hide_additional_fields">Hide</string>
+    <string name="show_additional_fields">Show</string>
+    <string name="edit_name">Contact Name</string>
+    <string name="edit_phone">Number</string>
+    <string name="edit_site">Company</string>
 </resources>
